@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Animate Slider jQuery Plugin</title>
+
+		<!-- Plugin css -->
+		<link rel="stylesheet" href="css/jquery.animateSlider.css">
+		
+		<!-- Demo css -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/normalize.css">
+   
+    </head>
+    <body>
+
+	<ul class="anim-slider">
+
+		<!-- Slide No1 -->
+		<li class="anim-slide">
+			<h1 id="slider">Animate Slider</h1>
+			<h2 id="plugin">jQuery Plugin</h2>
+			<h3 id="license">MIT License</h3>
+			<h4 id="version">v.0.1.0</h4>
+		</li>
+
+		
+		<!-- Slide No2 -->
+		<li class="anim-slide">
+			<h3 id="todo">So what you can do ...</h3>
+			
+			<h3 id="bounce">bounce</h3>
+			<h4 id="bounceUp">bounceInUp</h4>
+			<h4 id="bounceRight">bounceInRight</h4>
+			
+			<h3 id="fade">fade</h3>
+			<h4 id="fadeUp">fadeInUp</h4>
+			<h4 id="fadeDown">fadeInDown</h4>
+			
+			<h3 id="rotate">rotate</h3>
+			<h4 id="rotateRight">rotateInUpRight</h4>
+			<h4 id="rotateLeft">rotateInUpLeft</h4>
+		</li>
+
+		<!-- Slide No3 -->
+		<li class="anim-slide">
+			<img src="images/css3.png" alt="CSS3" id="css3">
+			<img src="images/html5.png" alt="HTML5" id="html5">
+			<img src="images/jquery.png" alt="jQuery" id="jquery">
+			<img src="images/modernizr.png" alt="Modernizr" id="modernizr">
+			<h2 id="animatecss">Animate.css</h2>
+		</li>
+
+		<!-- Arrows -->
+		<nav class="anim-arrows">
+			<span class="anim-arrows-prev">
+				<i class="fa fa-angle-left fa-3x"></i>
+			</span>
+			<span class="anim-arrows-next">
+				<i class="fa fa-angle-right fa-3x"></i>
+			</span>
+		</nav>
+		<!-- Dynamically created dots -->
+		
+	</ul>
+		<!-- credits -->
+		<p id="credits">Made with love by <a href="">Vchouliaras</a></p>
+		<a href="">
+			<img id="github-logo" src="images/github-cat.png" alt="Github Cat">
+		</a>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/modernizr.js"></script>	
+		<!-- Load the plugin -->
+		<script src="js/jquery.animateSlider.js"></script>
+		<script>
+		 $(".anim-slider").animateSlider(
+		 	{
+		 		animations 	: 
+			{
+				0	: 	//Slide No1
+				{
+					h1	: 
+					{
+						show   	  : "bounceIn",
+						hide 	  : "flipOutX",
+						delayShow : "delay1s"
+ 					},
+ 					h2:
+ 					{
+ 						show 	  : "fadeInUpBig",
+						hide 	  : "fadeOutDownBig",
+						delayShow : "delay1-5s"
+ 					},
+ 					h3 	:
+ 					{
+						show   	  : "bounceInRight",
+						hide 	  : "fadeOutRightBig",
+						delayShow : "delay1-5s"
+ 					},
+ 					h4:
+ 					{
+ 						show 	  : "bounceInUp",
+						hide 	  : "fadeOutLeftBig",
+						delayShow : "delay2s"
+					}	
+				},
+				1	: //Slide No2
+				{	
+					"#todo":
+					{
+						show 		: "fadeIn",
+						hide 		: "fadeOut",
+						delayShow   : "delay0-5s"
+					},
+					"#bounce" 	:
+					{
+						show 	 	: "bounceIn",
+						hide 	 	: "bounceOut",
+						delayShow 	: "delay2s"
+					},
+					"#bounceUp":
+					{
+						show 	 	: "bounceInDown",
+						hide 	 	: "bounceOutLeft",
+						delayShow 	: "delay2-5s"
+					},
+					"#bounceRight":
+					{
+						show 	 	: "bounceInRight",
+						hide 	 	: "bounceOutRight",
+						delayShow 	: "delay3s"
+					},
+					"#fade" :
+					{
+						show 	 	: "fadeInLeft",
+						hide 	 	: "fadeOutLeft",
+						delayShow 	: "delay3-5s"
+					},
+					"#fadeUp":
+					{
+						show 	 	: "fadeInUpBig",
+						hide 	 	: "fadeOutUpBig",
+						delayShow 	: "delay4s"
+					},
+					"#fadeDown":
+					{
+						show 	 	: "fadeInDownBig",
+						hide 	 	: "fadeOutDownBig",
+						delayShow 	: "delay4-5s"	
+					},
+					"#rotate" :
+					{
+						show 	 	: "rotateIn",
+						hide 	 	: "rotateOut",
+						delayShow 	: "delay5-5s"
+					},
+					"#rotateRight" :
+					{
+						show 	 	: "rotateInUpRight",
+						hide 	 	: "rotateOutDownRight",
+						delayShow 	: "delay6s"
+					},
+					"#rotateLeft" :
+					{
+						show 	 	: "rotateInUpLeft",
+						hide 	 	: "rotateOutDownLeft",
+						delayShow 	: "delay6-5s"
+					}
+				},
+				2	: //Slide No3
+				{
+					"img#css3"	:
+					{
+						show 	  : "flipInY",
+						hide 	  : "flipOutY",
+						delayShow : "delay0-5s"
+					},
+					"img#html5"	:
+					{
+						show 	  : "flipInY",
+						hide 	  : "flipOutY",
+						delayShow : "delay0-5s"
+					},
+					"img#jquery"  :
+					{
+						show 	  : "bounceIn",
+						hide 	  : "slideOutRight",
+						delayShow : "delay1-5s"
+					},
+					"img#modernizr" :
+					{
+						show 	  : "rollIn",
+						hide 	  : "rollOut",
+						delayShow : "delay2s"
+					},
+					"#animatecss"	: 
+					{
+						show 	  : "lightSpeedIn",
+						hide 	  : "rollOut",
+						delayShow : "delay2-5s"
+					}
+				}
+			}
+		 	});
+		</script>
+    </body>
+</html>
