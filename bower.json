@@ -1,0 +1,22 @@
+{
+	"name": "animateSlider",
+	"version": "1.0.0",
+	"authors": [
+		"Vasileios Chouliaras <vasilis.chouliaras@gmail.com>"
+	],
+	"description": "A jQuery Slider plugin with specific animations for each element",
+	"main": "src/jquery.animateSlider.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"jquery-plugin",
+		"animate",
+		"slider",
+		"animate-slider"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"jquery": "1.10.1",
+		"modernizr":"latest"
+	}
+}

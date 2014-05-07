@@ -1,0 +1,16 @@
+{
+  "smarttabs":true,
+  "eqnull":true,
+  "curly": true,
+  "immed": false,
+  "latedef": false,
+  "noarg": true,
+  "newcap": false,
+  "nonew" : false,
+  "undef": false,
+  "unused": true,
+  "sub": "false",
+  "boss": false,
+  "node": true,
+  "multistr": true
+}
