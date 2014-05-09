@@ -1,0 +1,49 @@
+.anim-slider{background-color: #fff;}
+.anim-slide{opacity: 0;}
+.anim-slide-this{opacity: 1;}
+
+li.anim-slide:nth-of-type(1){background:#fff url("../images/demo2/island-view.jpg") 100%/cover;}
+li.anim-slide:nth-of-type(2){background:#fff url("../images/demo2/summer-experience.jpg") 100%/cover;}
+li.anim-slide:nth-of-type(3){background:#fff url("../images/demo2/beach.jpg") 100%/cover;}
+
+li.anim-slide:nth-of-type(1)>h1
+{
+	position: static;
+	display: inline-block;
+	margin: 0;
+	font-size:40px;
+	padding: 0px 25px;
+}
+h1#looks{background-color:#fff;color:#34495e;}
+h1#amazing{background-color:#34495e;color:#fff;margin: 0px -5px;}
+h1#place{background-color:#3498db;color:#fff;}
+
+
+li.anim-slide:nth-of-type(2)>div
+{
+	width: 100%;
+	height: 100%;
+}
+div#img1{background:#fff url("../images/demo2/diving1.jpg") 100%/cover;}
+div#img2{background:#fff url("../images/demo2/diving2.jpg") 100%/cover;}
+div#img3{background:#fff url("../images/demo2/diving3.jpg") 100%/contain;}
+
+li.anim-slide:nth-of-type(3)>h1
+{
+	margin: 0;
+	font-size:60px;
+	color: #225A86;
+}
+h1#T{top:30%;left:25%;}
+h1#r{top:30%;left: 28%;}
+h1#y{top:30%;left: 30%;}
+h1#i{top:30%;left: 35%;}
+h1#t{top:30%;left: 37%;}
+h1#mark{top:30%;left: 39%;}
+
+div#demo{text-align: center;}
+div#demo>a{display:inline-block;text-decoration: none;}
+div#demo>a>h4{padding: 5px 8px;margin: 20px;background-color: #225A86;color: #fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.15);}
+p#credits{z-index:-1;position: fixed;bottom: 0px;width: 100%;text-align: center;font-size: 14px;}
+p#credits>a{font-weight: bold;color: #999;text-decoration: none;}
+img#github-logo{z-index:-1;position: fixed;bottom: -20px;right: 2%;opacity: 0.4;}
