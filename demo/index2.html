@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Animate Slider jQuery Plugin</title>
+		<!-- Plugin css -->
+		<link rel="stylesheet" href="../assets/jquery.animateSlider.css">
+		<!-- Demo css -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+	    <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/demo2.css">
+	</head>
+
+    <body>
+
+	<ul class="anim-slider">
+
+		<!-- Slide No1 -->
+		<li class="anim-slide">
+			<h1 id="looks">LOOKS</h1>
+			<h1 id="amazing">PRETTY AMAZIND</h1>
+			<h1 id="place">PLACE</h1>
+		</li>
+
+		
+		<!-- Slide No2 -->
+		<li class="anim-slide">
+			<div id="img1"></div>
+			<div id="img2"></div>
+			<div id="img3"></div>
+		</li>
+
+		<!-- Slide No3 -->
+		<li class="anim-slide">
+			<h1 id="T">T</h1>
+			<h1 id="r">r</h1>
+			<h1 id="y">y</h1>
+			<h1 id="i">i</h1>
+			<h1 id="t">t</h1>
+			<h1 id="mark">!</h1>
+		</li>
+
+		<!-- Arrows -->
+		<nav class="anim-arrows">
+			<span class="anim-arrows-prev">
+				<i class="fa fa-angle-left fa-3x"></i>
+			</span>
+			<span class="anim-arrows-next">
+				<i class="fa fa-angle-right fa-3x"></i>
+			</span>
+		</nav>
+		<!-- Dynamically created dots -->
+		
+	</ul>
+
+
+		<!-- demo -->
+		<div id="demo">
+			<a href="index.html"><h4>Demo No1</h4></a>
+			<a href="index2.html"><h4>Demo No2</h4></a>
+		</div>
+
+		<!-- credits -->
+		<p id="credits">Made with love by <a href="https://github.com/Vchouliaras">Vchouliaras</a></p>
+		<a href="https://github.com/Vchouliaras/jquery.animateSlider.js">
+			<img id="github-logo" class="animated tada delay3s" src="images/github-cat.png" alt="Github Cat">
+		</a>
+
+
+
+
+
+		<!-- Bower Depedencies -->
+		<script src="../bower_components/jquery/jquery.min.js"></script>
+		<script src="../bower_components/modernizr/modernizr.js"></script>	
+		<!-- Load the plugin -->
+		<script src="../src/jquery.animateSlider.js"></script>
+		<script>
+		 $(".anim-slider").animateSlider(
+		 	{
+		 		autoplay	:true,
+		 		interval	:5500,
+		 		animations 	: 
+				{
+					0	: 	//Slide No1
+					{
+						li	: 
+						{
+							show   	  : "fadeIn",
+							hide 	  : "fadeOutLeftBig",
+							delayShow : "delay0.5s"
+	 					},
+	 					"#looks"	:
+	 					{
+	 						show 	  : "rotateInUpLeft",
+							delayShow : "delay1s"
+	 					},
+	 					"#amazing" 	:
+	 					{
+							show   	  : "rotateInUpLeft",
+							delayShow : "delay1-5s"
+	 					},
+	 					"#place"	:
+	 					{
+	 						show 	  : "rotateInUpLeft",
+							delayShow : "delay2s"
+						}	
+					},
+					1	: //Slide No2
+					{	
+						li			:
+						{
+							show 		: "fadeInLeft",
+							hide 		: "fadeOutLeftBig",
+							delayShow   : "delay0-5s"
+						},
+						"#img1"		:
+						{
+							show 		: "fadeInRight",
+							delayShow   : "delay2s"
+						},
+						"#img2"		:
+						{
+							show 		: "fadeInLeft",
+							delayShow   : "delay3s"
+							
+						},
+						"#img3"		:
+						{
+							show 		: "fadeInRight",
+							hide 		: "fadeOutLeftBig",
+							delayShow   : "delay4s"
+						}
+					},
+					2:
+					{
+						li			:
+						{
+							show 		: "fadeInUp",
+							hide 		: "fadeOutDownBig",
+							delayShow   : "delay0-5s"
+						},
+						"#T"			:
+						{
+							show 		: "slideInLeft",
+							delayShow   : "delay1-5s"
+						},
+						"#r"			:
+						{
+							show 		: "bounceInRight",
+							delayShow   : "delay2s"
+						},
+						"#y"			:
+						{
+							show 		: "fadeInRight",
+							delayShow   : "delay2-5s"
+						},
+						"#i"			:
+						{
+							show 		: "rollIn",
+							delayShow   : "delay3s"
+						},
+						"#t"			:
+						{
+							show 		: "rollIn",
+							delayShow   : "delay3s"
+						},
+						"#mark"			:
+						{
+							show 		: "rotateIn",
+							delayShow   : "delay3-5s"
+						},
+					}
+				}
+		 	});
+		</script>
+    </body>
+</html>
