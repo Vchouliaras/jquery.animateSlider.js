@@ -13,7 +13,7 @@ The Animate Slider plugin uses some predefined animation classes (fadeIn,fadeOut
 Two quick start options are available:
 
 * Download the [production version][min] with the plugin's css [stylesheet][css]
-* Clone the repo: `https://github.com/Vchouliaras/jquery.animateSlider.js.git`
+* Clone the repo: `git://github.com/Vchouliaras/jquery.animateSlider.js.git`
  
 [min]: https://raw.github.com/vchouliaras/jquery.animateSlider.js/master/dist/jquery.animateSlider.min.js
 [css]: https://raw.github.com/vchouliaras/jquery.animateSlider.js/master/assets/jquery.animateSlider.css
