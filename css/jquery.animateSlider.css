@@ -160,6 +160,8 @@
   .delay5-5s{-webkit-animation-delay:5.5s;animation-delay:5.5s;}
   .delay6s{-webkit-animation-delay:6s;animation-delay:6s;}
   .delay6-5s{-webkit-animation-delay:6.5s;animation-delay:6.5s;}
+  .delay13s{-webkit-animation-delay:13s;animation-delay:13s;}
+
 
   @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
