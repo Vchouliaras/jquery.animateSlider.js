@@ -224,7 +224,7 @@
 		animDuration:	function(page) 
 		{
 			var $slideAnimations			=	this.slides.eq(page);
-			var slideAnimationsCount		=	($slideAnimations.hasClass("animated")) ? $slideAnimations.children("*.animated").length + 1 : $slideAnimations.children("*.animated").length ;
+			var slideAnimationsCount		=	($slideAnimations.hasClass("animated")) ? $slideAnimations.find("*.animated").length + 1 : $slideAnimations.find("*.animated").length ;
 			var animationStart				=	+new Date();
 			var	promise						=	new $.Deferred();
 			var	animationTime,count			=	0;

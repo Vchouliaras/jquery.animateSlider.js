@@ -1,10 +1,10 @@
 /*
 *
 *  @name        Animate Slider 
-*  @description A jQuery Slider plugin with specific animations for each element 
-*  @version     1.0.0 
+*  @description A jQuery Slider plugin with speacific animations for each element.It uses some predefined animation classes (fadeIn,fadeOut,rotateIn,bounce,slideInRight etc.) and adds them to each element on the slider.It also add classes with delay for each animation (delay1s,delay1-5s,delay2s etc.) 
+*  @version     1.0.5 
 *  @copyright   2014 - Vasileios Chouliaras <vasilis.chouliaras@gmail.com> 
-*  @license     MIT - https://github.com/vchouliaras/jquery.animateSlider.js/blob/master/LICENSE-MIT 
+*  @license      -  
 *
 */
 ;(function($,window,document,undefined)
@@ -233,7 +233,7 @@
 		animDuration:	function(page) 
 		{
 			var $slideAnimations			=	this.slides.eq(page);
-			var slideAnimationsCount		=	($slideAnimations.hasClass("animated")) ? $slideAnimations.children("*.animated").length + 1 : $slideAnimations.children("*.animated").length ;
+			var slideAnimationsCount		=	($slideAnimations.hasClass("animated")) ? $slideAnimations.find("*.animated").length + 1 : $slideAnimations.find("*.animated").length ;
 			var animationStart				=	+new Date();
 			var	promise						=	new $.Deferred();
 			var	animationTime,count			=	0;
