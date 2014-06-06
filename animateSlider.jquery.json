@@ -2,7 +2,7 @@
   "name": "animateSlider",
   "title": "Animate Slider",
   "description": "A jQuery Slider plugin with speacific animations for each element.It uses some predefined animation classes (fadeIn,fadeOut,rotateIn,bounce,slideInRight etc.) and adds them to each element on the slider.It also add classes with delay for each animation (delay1s,delay1-5s,delay2s etc.)",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://github.com/vchouliaras/jquery.animateSlider.js",
   "docs": "https://github.com/Vchouliaras/jquery.animateSlider.js#animate-slider---v100",
   "demo": "http://vchouliaras.github.io/jquery.animateSlider.js/",
