@@ -5,14 +5,14 @@
   "version": "1.0.6",
   "homepage": "https://github.com/vchouliaras/jquery.animateSlider.js",
   "docs": "https://github.com/Vchouliaras/jquery.animateSlider.js#animate-slider---v100",
-  "demo": "http://shane-heyns.github.io/jquery.animateSlider.js",
+  "demo": "http://vchouliaras.github.io/jquery.animateSlider.js/",
   "author": {
     "name": "Vasileios Chouliaras",
     "email": "vasilis.chouliaras@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shane-heyns/jquery.animateSlider.js.git"
+    "url": "git://github.com/vchouliaras/jquery.animateSlider.js.git"
   },
   "bugs": "https://github.com/vchouliaras/jquery.animateSlider.js/issues",
   "licenses":
