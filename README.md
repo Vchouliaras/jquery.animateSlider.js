@@ -120,7 +120,7 @@ $(".anim-slider").animateSlider(
 
 ## Examples
 
-[Check out the demo](https://vchouliaras.github.io/jquery.animateSlider.js/)
+[Check out the demo](http://shane-heyns.github.io/jquery.animateSlider.js)
 
 
 ## Gredits
