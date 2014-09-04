@@ -1,3 +1,12 @@
+/*
+*
+*  @name        Animate Slider 
+*  @description A jQuery Slider plugin with specific animations for each element 
+*  @version     1.0.6 
+*  @copyright   2014 - Vasileios Chouliaras <vasilis.chouliaras@gmail.com> 
+*  @license     MIT - https://github.com/vchouliaras/jquery.animateSlider.js/blob/master/LICENSE-MIT 
+*
+*/
 ;(function($,window,document,undefined)
 {
 	/**
@@ -58,7 +67,7 @@
 		navigate	:	function(page)
 		{
 			//Classes created from animate.css, you can add your own here.
-			var classes		=	'bounce flash pulse rubberBand shake swing tada wobble bounceIn bounceInDown bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig animated. flip flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight slideInDown slideInLeft slideInRight slideOutLeft slideOutRight slideOutUp slideInUp slideOutDown hinge rollIn rollOut';
+			var classes		=	'bounce flash pulse rubberBand shake swing tada wobble bounceIn bounceInDown bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight slideInDown slideInLeft slideInRight slideOutLeft slideOutRight slideOutUp slideInUp slideOutDown hinge rollIn rollOut fadeInUpLarge fadeInDownLarge fadeInLeftLarge fadeInRightLarge fadeInUpLeft fadeInUpLeftBig fadeInUpLeftLarge fadeInUpRight fadeInUpRightBig fadeInUpRightLarge fadeInDownLeft fadeInDownLeftBig fadeInDownLeftLarge fadeInDownRight fadeInDownRightBig fadeInDownRightLarge fadeOutUpLarge fadeOutDownLarge fadeOutLeftLarge fadeOutRightLarge fadeOutUpLeft fadeOutUpLeftBig fadeOutUpLeftLarge fadeOutUpRight fadeOutUpRightBig fadeOutUpRightLarge fadeOutDownLeft fadeOutDownLeftBig fadeOutDownLeftLarge fadeOutDownRight fadeOutDownRightBig fadeOutDownRightLarge bounceInBig bounceInLarge bounceInUpBig bounceInUpLarge bounceInDownBig bounceInDownLarge bounceInLeft bounceInLeftBig bounceInLeftLarge bounceInRightBig bounceInRightLarge bounceInUpLeft bounceInUpLeftBig bounceInUpLeftLarge bounceInUpRight bounceInUpRightBig bounceInUpRightLarge bounceInDownLeft bounceInDownLeftBig bounceInDownLeftLarge bounceInDownRight bounceInDownRightBig bounceInDownRightLarge bounceOutBig bounceOutLarge bounceOutUpBig bounceOutUpLarge bounceOutDownBig bounceOutDownLarge bounceOutLeftBig bounceOutLeftLarge bounceOutRightBig bounceOutRightLarge bounceOutUpLeft bounceOutUpLeftBig bounceOutUpLeftLarge bounceOutUpRight bounceOutUpRightBig bounceOutUpRightLarge bounceOutDownLeft bounceOutDownLeftBig bounceOutDownLeftLarge bounceOutDownRight bounceOutDownRightBig bounceOutDownRightLarge zoomIn zoomInUp zoomInUpBig zoomInUpLarge zoomInDown zoomInDownBig zoomInDownLarge zoomInLeft zoomInLeftBig zoomInLeftLarge zoomInRight zoomInRightBig zoomInRightLarge zoomInUpLeft zoomInUpLeftBig zoomInUpLeftLarge zoomInUpRight zoomInUpRightBig zoomInUpRightLarge zoomInDownLeft zoomInDownLeftBig zoomInDownLeftLarge zoomInDownRight zoomInDownRightBig zoomInDownRightLarge zoomOut zoomOutUp zoomOutUpBig zoomOutUpLarge zoomOutDown zoomOutDownBig zoomOutDownLarge zoomOutLeft zoomOutLeftBig zoomOutLeftLarge zoomOutRight zoomOutRightBig zoomOutRightLarge zoomOutUpLeft zoomOutUpLeftBig zoomOutUpLeftLarge zoomOutUpRight zoomOutUpRightBig zoomOutUpRightLarge zoomOutDownLeft zoomOutDownLeftBig zoomOutDownLeftLarge zoomOutDownRight zoomOutDownRightBig zoomOutDownRightLarge flipInTopFront flipInTopBack flipInBottomFront flipInBottomBack flipInLeftFront flipInLeftBack flipInRightFront flipInRightBack flipOutTopFront flipOutTopBack flipOutBottomFront flipOutBottomback flipOutLeftFront flipOutLeftBack flipOutRightFront flipOutRightBack strobe shakeX shakeY spin spinReverse slingshot slingshotReverse pulsate heartbeat panic';
 			var classShow,classHide,delayShow,$next,$current,currentAnimate,nextAnimate;
 
 			$current		=	this.slides.eq(this.current);
@@ -80,6 +89,7 @@
 							delayShow	=	$current.data("delayShow");
 							$current.removeClass(delayShow);
 							$current.addClass(classHide+" animated");
+							return false;
 						}
 						else
 						{
@@ -97,6 +107,7 @@
 								delayShow	=	$next.data("delayShow");
 								$next.removeClass(classes);
 								$next.addClass(classShow+" "+delayShow+" animated");
+								return false;
 							}
 							else
 							{
@@ -138,10 +149,9 @@
 			this.navigate(page);
 		},
 		/**
-		 * [Get the configuration object for each slide element and attach it to element with $.data]
-		 * @param  {number} page	[current slide]
-		 * @param  {object} config	[configuration object]
-		 * @return {object} data	[return the config animation object]
+		 * [Get the configuration object for each slide element and attach it to elements with $.data]
+		 * @param  {number} page   [current slide]
+		 * @param  {object} config [configuration object]
 		 */
 		elemAnimate	:	function(page,config)
 		{
@@ -149,32 +159,38 @@
 			{
 				if ( this.slidesCount !== Object.keys(config.animations).length )
 				{
-					throw new SyntaxError("Animations Object length must be equal slides length");
+					throw new SyntaxError("Slides length and animation Object length must be equal.");
 				}
 				//Get the selected Slide configuration object
 				var animations		=	config.animations[page];
 				var $current		=	this.slides.eq(page);
 				return $.each(animations,function(index,value)
 					{
+						
 						if ( index	==	$current.prop("tagName").toLowerCase() )
 						{
-							if ( $.isEmptyObject( $current.data() ) )
+							if ( $current.data("classShow")	== null )
 							{
 								if ( typeof value.show		===	"string" )	{	$current.data("classShow",value.show);		}	else	{	$current.data("classShow","");	}
 								if ( typeof value.hide		===	"string" )	{	$current.data("classHide",value.hide);		}	else	{	$current.data("classHide","");	}	
 								if ( typeof	value.delayShow	===	"string" )	{	$current.data("delayShow",value.delayShow);	}	else	{	$current.data("delayShow"," ");	}	
 							}
+							return false;
 						}
-						else if ( !$current.find(index)[0] )
+						else
 						{
-							throw new TypeError("The element \'"+index+"\' does not exist.");
-						}			
-						else if ( $.isEmptyObject( $current.find(index).data() ) )
-						{
-							if( typeof value.show		===	"string" ) {	$current.find(index).data("classShow",value.show);		} else	{	$current.find(index).data("classShow"," ");	}
-							if( typeof value.hide		===	"string" ) {	$current.find(index).data("classHide",value.hide);		} else	{	$current.find(index).data("classHide"," ");	}
-							if( typeof value.delayShow	===	"string" ) {	$current.find(index).data("delayShow",value.delayShow);	} else	{	$current.find(index).data("delayShow"," ");	}
-						}		
+							if ( !$current.find(index)[0] )
+							{
+								throw new TypeError("The element \'"+index+"\' does not exist.");
+							}
+
+							if ( $current.find(index).data("classShow") == null )
+							{
+								if( typeof value.show		===	"string" ) {	$current.find(index).data("classShow",value.show);		} else	{	$current.find(index).data("classShow"," ");	}
+								if( typeof value.hide		===	"string" ) {	$current.find(index).data("classHide",value.hide);		} else	{	$current.find(index).data("classHide"," ");	}
+								if( typeof value.delayShow	===	"string" ) {	$current.find(index).data("delayShow",value.delayShow);	} else	{	$current.find(index).data("delayShow"," ");	}
+							}
+						}
 					});
 			}
 		},
@@ -224,7 +240,7 @@
 		animDuration:	function(page) 
 		{
 			var $slideAnimations			=	this.slides.eq(page);
-			var slideAnimationsCount		=	($slideAnimations.hasClass("animated")) ? $slideAnimations.find("*.animated").length + 1 : $slideAnimations.find("*.animated").length ;
+			var slideAnimationsCount		=	$slideAnimations.children("*.animated").length;
 			var animationStart				=	+new Date();
 			var	promise						=	new $.Deferred();
 			var	animationTime,count			=	0;
@@ -261,7 +277,7 @@
 				{
 					if (that.config.autoplay)
 					{
-						clearTimeout(that.autoplay); 
+						clearTimeout(that.autoplay);
 						that.config.autoplay	=	false;
 					}
 					var page	=	( that.current === 0 )? that.slidesCount - 1 : that.current - 1;
@@ -277,7 +293,8 @@
 		},
 		defaults	:
 		{
-			autoplay	: false
+			autoplay	: true,
+			interval	: 5000
 		}
 	};
 
