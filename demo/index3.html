@@ -10,9 +10,8 @@
 		<!-- Plugin css -->
 		<link rel="stylesheet" href="css/jquery.animateSlider.css">
 		<!-- Demo css -->
-		<link rel="stylesheet" href="css/font-awesome.css">
 	    <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/demo1.css">
+		<link rel="stylesheet" href="css/demo3.css">
 	</head>
 
     <body>
@@ -23,20 +22,19 @@
 		<li class="anim-slide">
 			<h1 id="slider">Animate Slider</h1>
 			<h2 id="plugin">jQuery Plugin</h2>
-			<h3 id="license">MIT License</h3>
+			<h3 id="license">Cool Effects</h3>
 			<h4 id="version">v.1.0.6</h4>
 		</li>
-
 		
 		<!-- Slide No2 -->
 		<li class="anim-slide">
 			<h3 id="todo">So what you can do ...</h3>
 			
-			<h3 id="bounce">bounce</h3>
-			<h4 id="bounceUp">bounceInUp</h4>
-			<h4 id="bounceRight">bounceInRight</h4>
+			<h3 id="lightspeed">lightSpeedIn</h3>
+			<h4 id="zoomup">zoomInUpRight</h4>
+			<h4 id="bounceRight">bounceInDownRight</h4>
 			
-			<h3 id="fade">fade</h3>
+			<h3 id="rollin">rollIn</h3>
 			<h4 id="fadeUp">fadeInUp</h4>
 			<h4 id="fadeDown">fadeInDown</h4>
 			
@@ -47,10 +45,10 @@
 
 		<!-- Slide No3 -->
 		<li class="anim-slide">
-			<img src="images/demo1/css3.png" alt="CSS3" id="css3">
-			<img src="images/demo1/html5.png" alt="HTML5" id="html5">
-			<img src="images/demo1/jquery.png" alt="jQuery" id="jquery">
-			<img src="images/demo1/modernizr.png" alt="Modernizr" id="modernizr">
+			<img src="images/demo3/css3.png" alt="CSS3" id="css3">
+			<img src="images/demo3/html5.png" alt="HTML5" id="html5">
+			<img src="images/demo3/jquery.png" alt="jQuery" id="jquery">
+			<img src="images/demo3/modernizr.png" alt="Modernizr" id="modernizr">
 			<h2 id="animatecss">Animate.css</h2>
 		</li>
 
@@ -96,18 +94,18 @@
 						h1	: 
 						{
 							show   	  : "bounceIn",
-							hide 	  : "flipOutX",
+							hide 	  : "zoomOutUpBig",
 							delayShow : "delay1s"
 	 					},
 	 					h2:
 	 					{
-	 						show 	  : "fadeInUpBig",
+	 						show 	  : "fadeInUpLeftLarge",
 							hide 	  : "fadeOutDownBig",
 							delayShow : "delay1-5s"
 	 					},
 	 					h3 	:
 	 					{
-							show   	  : "bounceInRight",
+							show   	  : "zoomInUpRightLarge",
 							hide 	  : "fadeOutRightBig",
 							delayShow : "delay1-5s"
 	 					},
@@ -116,7 +114,7 @@
 	 						show 	  : "bounceInUp",
 							hide 	  : "fadeOutLeftBig",
 							delayShow : "delay2s"
-						}	
+						}
 					},
 					1	: //Slide No2
 					{	
@@ -126,34 +124,34 @@
 							hide 		: "fadeOut",
 							delayShow   : "delay0-5s"
 						},
-						"#bounce" 	:
+						"#lightspeed" 	:
 						{
-							show 	 	: "bounceIn",
-							hide 	 	: "bounceOut",
+							show 	 	: "lightSpeedIn",
+							hide 	 	: "lightSpeedOut",
 							delayShow 	: "delay2s"
 						},
-						"#bounceUp":
+						"#zoomup":
 						{
-							show 	 	: "bounceInDown",
+							show 	 	: "zoomInUpRightBig",
 							hide 	 	: "bounceOutLeft",
 							delayShow 	: "delay2-5s"
 						},
 						"#bounceRight":
 						{
-							show 	 	: "bounceInRight",
+							show 	 	: "bounceInDownRightLarge",
 							hide 	 	: "bounceOutRight",
 							delayShow 	: "delay3s"
 						},
-						"#fade" :
+						"#rollin" :
 						{
-							show 	 	: "fadeInLeft",
-							hide 	 	: "fadeOutLeft",
+							show 	 	: "rollIn",
+							hide 	 	: "rollOut",
 							delayShow 	: "delay3-5s"
 						},
 						"#fadeUp":
 						{
 							show 	 	: "fadeInUpBig",
-							hide 	 	: "fadeOutUpBig",
+							hide 	 	: "hinge",
 							delayShow 	: "delay4s"
 						},
 						"#fadeDown":
