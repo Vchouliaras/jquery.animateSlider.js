@@ -43,12 +43,8 @@ In your web page:
 
 	<!-- arrows -->
 	<nav class="anim-arrows">
-		<span class="anim-arrows-prev">
-			<i class="fa fa-angle-left fa-3x"></i>
-		</span>
-		<span class="anim-arrows-next">
-			<i class="fa fa-angle-right fa-3x"></i>
-		</span>
+		<span class="anim-arrows-prev"></span>
+		<span class="anim-arrows-next"></span>
 	</nav>
 	<!-- dynamically created dots -->
 		
