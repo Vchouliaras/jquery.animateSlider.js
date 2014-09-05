@@ -1,4 +1,4 @@
-# Animate Slider   v1.0.5
+# Animate Slider   v1.0.6
 <br/>
 A jQuery Slider plugin with specific animations effects for each element.
 
