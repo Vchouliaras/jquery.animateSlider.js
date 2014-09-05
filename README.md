@@ -120,25 +120,25 @@ $(".anim-slider").animateSlider(
 
 ##Effects
 ##Bounce
-bounce bounceIn bounceInDown bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp bounceInBig bounceInLarge bounceInUpBig bounceInUpLarge bounceInDownBig bounceInDownLarge bounceInLeft bounceInLeftBig bounceInLeftLarge bounceInRightBig bounceInRightLarge bounceInUpLeft bounceInUpLeftBig bounceInUpLeftLarge bounceInUpRight bounceInUpRightBig bounceInUpRightLarge bounceInDownLeft bounceInDownLeftBig bounceInDownLeftLarge bounceInDownRight bounceInDownRightBig bounceInDownRightLarge bounceOutBig bounceOutLarge bounceOutUpBig bounceOutUpLarge bounceOutDownBig bounceOutDownLarge bounceOutLeftBig bounceOutLeftLarge bounceOutRightBig bounceOutRightLarge bounceOutUpLeft bounceOutUpLeftBig bounceOutUpLeftLarge bounceOutUpRight bounceOutUpRightBig bounceOutUpRightLarge bounceOutDownLeft bounceOutDownLeftBig bounceOutDownLeftLarge bounceOutDownRight bounceOutDownRightBig bounceOutDownRightLarge
+bounce,  bounceIn,  bounceInDown,  bounceInRight,  bounceInUp,  bounceOut,  bounceOutDown,  bounceOutLeft,  bounceOutRight,  bounceOutUp,  bounceInBig,  bounceInLarge,  bounceInUpBig,  bounceInUpLarge,  bounceInDownBig,  bounceInDownLarge,  bounceInLeft,  bounceInLeftBig,  bounceInLeftLarge,  bounceInRightBig,  bounceInRightLarge,  bounceInUpLeft,  bounceInUpLeftBig,  bounceInUpLeftLarge,  bounceInUpRight,  bounceInUpRightBig,  bounceInUpRightLarge,  bounceInDownLeft,  bounceInDownLeftBig,  bounceInDownLeftLarge,  bounceInDownRight,  bounceInDownRightBig,  bounceInDownRightLarge,  bounceOutBig,  bounceOutLarge,  bounceOutUpBig,  bounceOutUpLarge,  bounceOutDownBig,  bounceOutDownLarge,  bounceOutLeftBig,  bounceOutLeftLarge,  bounceOutRightBig,  bounceOutRightLarge,  bounceOutUpLeft,  bounceOutUpLeftBig,  bounceOutUpLeftLarge,  bounceOutUpRight,  bounceOutUpRightBig,  bounceOutUpRightLarge,  bounceOutDownLeft,  bounceOutDownLeftBig,  bounceOutDownLeftLarge,  bounceOutDownRight,  bounceOutDownRightBig,  bounceOutDownRightLarge
 
 ##Fade
-fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeInUpLarge fadeInDownLarge fadeInLeftLarge fadeInRightLarge fadeInUpLeft fadeInUpLeftBig fadeInUpLeftLarge fadeInUpRight fadeInUpRightBig fadeInUpRightLarge fadeInDownLeft fadeInDownLeftBig fadeInDownLeftLarge fadeInDownRight fadeInDownRightBig fadeInDownRightLarge fadeOutUpLarge fadeOutDownLarge fadeOutLeftLarge fadeOutRightLarge fadeOutUpLeft fadeOutUpLeftBig fadeOutUpLeftLarge fadeOutUpRight fadeOutUpRightBig fadeOutUpRightLarge fadeOutDownLeft fadeOutDownLeftBig fadeOutDownLeftLarge fadeOutDownRight fadeOutDownRightBig fadeOutDownRightLarge fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig 
+fadeIn,  fadeInDown,  fadeInDownBig,  fadeInLeft,  fadeInLeftBig,  fadeInRight,  fadeInRightBig,  fadeInUp,  fadeInUpBig,  fadeInUpLarge,  fadeInDownLarge,  fadeInLeftLarge,  fadeInRightLarge,  fadeInUpLeft,  fadeInUpLeftBig,  fadeInUpLeftLarge,  fadeInUpRight,  fadeInUpRightBig,  fadeInUpRightLarge,  fadeInDownLeft,  fadeInDownLeftBig fadeInDownLeftLarge,  fadeInDownRight,  fadeInDownRightBig,  fadeInDownRightLarge,  fadeOutUpLarge,  fadeOutDownLarge fadeOutLeftLarge,  fadeOutRightLarge,  fadeOutUpLeft,  fadeOutUpLeftBig,  fadeOutUpLeftLarge,  fadeOutUpRight,  fadeOutUpRightBig,  fadeOutUpRightLarge,  fadeOutDownLeft,  fadeOutDownLeftBig,  fadeOutDownLeftLarge,  fadeOutDownRight,  fadeOutDownRightBig,  fadeOutDownRightLarge,  fadeOut,  fadeOutDown,  fadeOutDownBig,  fadeOutLeft fadeOutLeftBig,  fadeOutRight,  fadeOutRightBig,  fadeOutUp,  fadeOutUpBig 
 
 ##Flip
-flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut flipInTopFront flipInTopBack flipInBottomFront flipInBottomBack flipInLeftFront flipInLeftBack flipInRightFront flipInRightBack flipOutTopFront flipOutTopBack flipOutBottomFront flipOutBottomback flipOutLeftFront flipOutLeftBack flipOutRightFront flipOutRightBack 
+flipInX,  flipInY,  flipOutX,  flipOutY,  lightSpeedIn,  lightSpeedOut,  flipInTopFront,  flipInTopBack flipInBottomFront,  flipInBottomBack,  flipInLeftFront,  flipInLeftBack,  flipInRightFront,  flipInRightBack,  flipOutTopFront,  flipOutTopBack,  flipOutBottomFront,  flipOutBottomback,  flipOutLeftFront,  flipOutLeftBack,  flipOutRightFront,  flipOutRightBack 
 
 ##Rotate
-rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight 
+rotateIn,  rotateInDownLeft,  rotateInDownRight,  rotateInUpLeft,  rotateInUpRight,  rotateOut,  rotateOutDownLeft,  rotateOutDownRight,  rotateOutUpLeft,  rotateOutUpRight 
 
 ##Slide
-slideInDown slideInLeft slideInRight slideOutLeft slideOutRight slideOutUp slideInUp slideOutDown 
+slideInDown,  slideInLeft,  slideInRight,  slideOutLeft,  slideOutRight,  slideOutUp,  slideInUp,  slideOutDown 
 
 ##Zoom
 zoomIn,  zoomInUp,  zoomInUpBig,  zoomInUpLarge,  zoomInDown,  zoomInDownBig,  zoomInDownLarge,  zoomInLeft,  zoomInLeftBig,  zoomInLeftLarge,  zoomInRight,  zoomInRightBig,  zoomInRightLarge,  zoomInUpLeft,  zoomInUpLeftBig,  zoomInUpLeftLarge,  zoomInUpRight,  zoomInUpRightBig,  zoomInUpRightLarge,  zoomInDownLeft,  zoomInDownLeftBig,  zoomInDownLeftLarge,  zoomInDownRight,  zoomInDownRightBig,  zoomInDownRightLarge,  zoomOut,  zoomOutUp,  zoomOutUpBig,  zoomOutUpLarge,  zoomOutDown,  zoomOutDownBig,  zoomOutDownLarge,  zoomOutLeft,  zoomOutLeftBig,  zoomOutLeftLarge,  zoomOutRight,  zoomOutRightBig,  zoomOutRightLarge,  zoomOutUpLeft,  zoomOutUpLeftBig,  zoomOutUpLeftLarge,  zoomOutUpRight,  zoomOutUpRightBig,  zoomOutUpRightLarge,  zoomOutDownLeft,  zoomOutDownLeftBig,  zoomOutDownLeftLarge,  zoomOutDownRight,  zoomOutDownRightBig,  zoomOutDownRightLarge 
 
 ##Other
-hinge rollIn rollOut strobe shakeX shakeY spin spinReverse slingshot slingshotReverse pulsate heartbeat panic flash pulse rubberBand shake swing tada wobble 
+hinge,  rollIn,  rollOut,  strobe,  shakeX,  shakeY,  spin,  spinReverse,  slingshot,  slingshotReverse,  pulsate,  heartbeat,  panic,  flash,  pulse,  rubberBand,  shake,  swing,  tada,  wobble 
 
 ## Gredits
 
