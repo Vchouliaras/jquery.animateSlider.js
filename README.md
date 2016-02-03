@@ -123,7 +123,7 @@ $(".anim-slider").animateSlider(
 [Check out the demo](https://vchouliaras.github.io/jquery.animateSlider.js/)
 
 
-## Gredits
+## Credits
 
 Animate Slider plugin is built on top of  [jQuery](http://jquery.com)  using [Modernizr](http://www.modernizr.com) and [Animate.css](http://daneden.github.io/animate.css/)
 
