@@ -1,4 +1,4 @@
-# Animate Slider   v1.0.5
+# Animate Slider   v1.0.6
 <br/>
 A jQuery Slider plugin with specific animations effects for each element.
 
@@ -43,12 +43,8 @@ In your web page:
 
 	<!-- arrows -->
 	<nav class="anim-arrows">
-		<span class="anim-arrows-prev">
-			<i class="fa fa-angle-left fa-3x"></i>
-		</span>
-		<span class="anim-arrows-next">
-			<i class="fa fa-angle-right fa-3x"></i>
-		</span>
+		<span class="anim-arrows-prev"></span>
+		<span class="anim-arrows-next"></span>
 	</nav>
 	<!-- dynamically created dots -->
 		
@@ -120,8 +116,29 @@ $(".anim-slider").animateSlider(
 
 ## Examples
 
-[Check out the demo](https://vchouliaras.github.io/jquery.animateSlider.js/)
+[Check out the demo](http://shane-heyns.github.io/jquery.animateSlider.js)
 
+##Effects
+##Bounce
+bounce,  bounceIn,  bounceInDown,  bounceInRight,  bounceInUp,  bounceOut,  bounceOutDown,  bounceOutLeft,  bounceOutRight,  bounceOutUp,  bounceInBig,  bounceInLarge,  bounceInUpBig,  bounceInUpLarge,  bounceInDownBig,  bounceInDownLarge,  bounceInLeft,  bounceInLeftBig,  bounceInLeftLarge,  bounceInRightBig,  bounceInRightLarge,  bounceInUpLeft,  bounceInUpLeftBig,  bounceInUpLeftLarge,  bounceInUpRight,  bounceInUpRightBig,  bounceInUpRightLarge,  bounceInDownLeft,  bounceInDownLeftBig,  bounceInDownLeftLarge,  bounceInDownRight,  bounceInDownRightBig,  bounceInDownRightLarge,  bounceOutBig,  bounceOutLarge,  bounceOutUpBig,  bounceOutUpLarge,  bounceOutDownBig,  bounceOutDownLarge,  bounceOutLeftBig,  bounceOutLeftLarge,  bounceOutRightBig,  bounceOutRightLarge,  bounceOutUpLeft,  bounceOutUpLeftBig,  bounceOutUpLeftLarge,  bounceOutUpRight,  bounceOutUpRightBig,  bounceOutUpRightLarge,  bounceOutDownLeft,  bounceOutDownLeftBig,  bounceOutDownLeftLarge,  bounceOutDownRight,  bounceOutDownRightBig,  bounceOutDownRightLarge
+
+##Fade
+fadeIn,  fadeInDown,  fadeInDownBig,  fadeInLeft,  fadeInLeftBig,  fadeInRight,  fadeInRightBig,  fadeInUp,  fadeInUpBig,  fadeInUpLarge,  fadeInDownLarge,  fadeInLeftLarge,  fadeInRightLarge,  fadeInUpLeft,  fadeInUpLeftBig,  fadeInUpLeftLarge,  fadeInUpRight,  fadeInUpRightBig,  fadeInUpRightLarge,  fadeInDownLeft,  fadeInDownLeftBig fadeInDownLeftLarge,  fadeInDownRight,  fadeInDownRightBig,  fadeInDownRightLarge,  fadeOutUpLarge,  fadeOutDownLarge fadeOutLeftLarge,  fadeOutRightLarge,  fadeOutUpLeft,  fadeOutUpLeftBig,  fadeOutUpLeftLarge,  fadeOutUpRight,  fadeOutUpRightBig,  fadeOutUpRightLarge,  fadeOutDownLeft,  fadeOutDownLeftBig,  fadeOutDownLeftLarge,  fadeOutDownRight,  fadeOutDownRightBig,  fadeOutDownRightLarge,  fadeOut,  fadeOutDown,  fadeOutDownBig,  fadeOutLeft fadeOutLeftBig,  fadeOutRight,  fadeOutRightBig,  fadeOutUp,  fadeOutUpBig 
+
+##Flip
+flipInX,  flipInY,  flipOutX,  flipOutY,  lightSpeedIn,  lightSpeedOut,  flipInTopFront,  flipInTopBack flipInBottomFront,  flipInBottomBack,  flipInLeftFront,  flipInLeftBack,  flipInRightFront,  flipInRightBack,  flipOutTopFront,  flipOutTopBack,  flipOutBottomFront,  flipOutBottomback,  flipOutLeftFront,  flipOutLeftBack,  flipOutRightFront,  flipOutRightBack 
+
+##Rotate
+rotateIn,  rotateInDownLeft,  rotateInDownRight,  rotateInUpLeft,  rotateInUpRight,  rotateOut,  rotateOutDownLeft,  rotateOutDownRight,  rotateOutUpLeft,  rotateOutUpRight 
+
+##Slide
+slideInDown,  slideInLeft,  slideInRight,  slideOutLeft,  slideOutRight,  slideOutUp,  slideInUp,  slideOutDown 
+
+##Zoom
+zoomIn,  zoomInUp,  zoomInUpBig,  zoomInUpLarge,  zoomInDown,  zoomInDownBig,  zoomInDownLarge,  zoomInLeft,  zoomInLeftBig,  zoomInLeftLarge,  zoomInRight,  zoomInRightBig,  zoomInRightLarge,  zoomInUpLeft,  zoomInUpLeftBig,  zoomInUpLeftLarge,  zoomInUpRight,  zoomInUpRightBig,  zoomInUpRightLarge,  zoomInDownLeft,  zoomInDownLeftBig,  zoomInDownLeftLarge,  zoomInDownRight,  zoomInDownRightBig,  zoomInDownRightLarge,  zoomOut,  zoomOutUp,  zoomOutUpBig,  zoomOutUpLarge,  zoomOutDown,  zoomOutDownBig,  zoomOutDownLarge,  zoomOutLeft,  zoomOutLeftBig,  zoomOutLeftLarge,  zoomOutRight,  zoomOutRightBig,  zoomOutRightLarge,  zoomOutUpLeft,  zoomOutUpLeftBig,  zoomOutUpLeftLarge,  zoomOutUpRight,  zoomOutUpRightBig,  zoomOutUpRightLarge,  zoomOutDownLeft,  zoomOutDownLeftBig,  zoomOutDownLeftLarge,  zoomOutDownRight,  zoomOutDownRightBig,  zoomOutDownRightLarge 
+
+##Other
+hinge,  rollIn,  rollOut,  strobe,  shakeX,  shakeY,  spin,  spinReverse,  slingshot,  slingshotReverse,  pulsate,  heartbeat,  panic,  flash,  pulse,  rubberBand,  shake,  swing,  tada,  wobble 
 
 ## Gredits
 
