@@ -140,7 +140,7 @@ zoomIn,  zoomInUp,  zoomInUpBig,  zoomInUpLarge,  zoomInDown,  zoomInDownBig,  z
 ##Other
 hinge,  rollIn,  rollOut,  strobe,  shakeX,  shakeY,  spin,  spinReverse,  slingshot,  slingshotReverse,  pulsate,  heartbeat,  panic,  flash,  pulse,  rubberBand,  shake,  swing,  tada,  wobble 
 
-## Gredits
+## Credits
 
 Animate Slider plugin is built on top of  [jQuery](http://jquery.com)  using [Modernizr](http://www.modernizr.com) and [Animate.css](http://daneden.github.io/animate.css/)
 
